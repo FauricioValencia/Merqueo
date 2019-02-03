@@ -6,7 +6,6 @@ import classNames from 'classnames/bind';
 import { connect } from "react-redux";
 
 import styles from './App.scss';
-// import texts from 'Locales/Merqueo.locales';
 import CreateState from './FatherComponents/CreateState/CreateState';
 import Post from './FatherComponents/Post/Post';
 const cx = classNames.bind(styles);
@@ -48,9 +47,7 @@ const mapStateToProps = (state, props) => {
      publications: state.publication.publications
   };
 };
-// const mapDispatchToProps = {
-//   getDataApiOrderAsync,
-// };
+
 
 export default connect(
     mapStateToProps,

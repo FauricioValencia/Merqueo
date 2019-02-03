@@ -12,7 +12,6 @@
         .ContiainerUser{
             width: 10%;
             height: 100%;
-            // background: yellow;
             display: flex;
             justify-items: center;
             align-items: center;
@@ -22,26 +21,22 @@
         .sizeUSer{
             height: 30px;
             width: 30px;
-            // background: green;
         }
         .containerData{
             width: 90%;
             height: 100%;
-            // background: blue;
             display: flex;
             flex-direction: column;
         }
         .dataUser{
             width: 100%;
             height: 50%;
-            // background: gray;
             display: flex;
             flex-direction: row;
         }
         .timeUser{
             width: 100%;
             height: 50%;
-            // background: green;
         }
         .nameUSer{
             color: #00c073;
