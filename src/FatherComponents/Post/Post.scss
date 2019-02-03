@@ -1,0 +1,72 @@
+.Container-Post{
+    .containerCard{
+        background: #ffffff;
+        width: 60vw;
+        height: 160px;
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+        border-width: 0.8px;
+        border-color: #c2c2c2;
+       
+    }
+    .containerImagePerfil{
+        width: 10%;
+        height: 100%;
+        // background: red;
+        display: flex;
+        justify-content: center;
+    }
+    .sizeUser{
+        margin-top: 20%;
+        height: 50px;
+        width: 50px;
+    }
+    .ContainerDataPost{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 100%;
+ 
+    }
+    .containerDataUser{
+        width: 100%;
+        height: 30%;
+    }
+    .containerTextPost{
+        // background: yellow;
+        width: 95%;
+        height: 50%;
+    }
+    .containerButton{
+        width: 50%;
+        height: 20%;
+        display: flex;
+        justify-content: space-around;
+        // background: blue;
+    }
+    .containerCountCommentsReactions{
+        width: 100%;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: white;
+        border-style: solid;
+        border-width: 0.8px;
+        border-color: #c2c2c2;
+    }
+    .counts{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .styleInput{
+        height: 120px;
+        background: red;
+        width: 100%;
+    }
+    
+    
+}

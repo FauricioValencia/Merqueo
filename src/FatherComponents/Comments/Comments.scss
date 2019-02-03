@@ -1,0 +1,64 @@
+.Container-Comment{
+        .Comment{
+            width: 100%;
+            height: 80px;
+            background: #f4f4f4;
+            display: flex;
+            flex-direction: row;
+            border-style: solid;
+            border-width: 0.8px;
+            border-color: #c2c2c2;
+        }
+        .ContiainerUser{
+            width: 10%;
+            height: 100%;
+            // background: yellow;
+            display: flex;
+            justify-items: center;
+            align-items: center;
+            margin-left: 4%;
+
+        }
+        .sizeUSer{
+            height: 30px;
+            width: 30px;
+            // background: green;
+        }
+        .containerData{
+            width: 90%;
+            height: 100%;
+            // background: blue;
+            display: flex;
+            flex-direction: column;
+        }
+        .dataUser{
+            width: 100%;
+            height: 50%;
+            // background: gray;
+            display: flex;
+            flex-direction: row;
+        }
+        .timeUser{
+            width: 100%;
+            height: 50%;
+            // background: green;
+        }
+        .nameUSer{
+            color: #00c073;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+        .commentUSer{
+            margin-left: 2%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            margin-bottom: 0px;
+        }
+        .timeUSer{
+            color: #b7b7b7;
+            font-size: 0.5em;
+            margin: 0px;
+        }
+
+}
