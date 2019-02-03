@@ -30,7 +30,7 @@ export const Merqueo =()=>{
    )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Merqueo />, document.getElementById('root'));
 
 
 serviceWorker.unregister();

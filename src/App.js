@@ -1,10 +1,10 @@
 // DEPENDENCIES
 import React, { Component } from 'react';
 import classNames from 'classnames/bind';
-// CUSTOM COMPONENTS
-// import Button from 'Components/Button/Button';
-// import Input from './Components/Input/Input';
-// import logo from './logo.svg';
+
+// Redux
+import { connect } from "react-redux";
+
 import styles from './App.scss';
 // import texts from 'Locales/Merqueo.locales';
 import CreateState from './FatherComponents/CreateState/CreateState';
@@ -16,35 +16,15 @@ class App extends Component {
     super(props);
     this.state={
       isloading:false,
-      publications:[
-        {
-          name:'Juan Rodriguez',
-          time:'40 minutos',
-          likes: 12,
-          publication:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua',
-          comments:[
-            {
-              name: 'Elena',
-              comment: 'Lorem lipson 1',
-              time: '3 dias'
-            },
-            {
-              name: 'Jose',
-              comment: 'Lorem lipson 2',
-              time: '2 dias'
-            },
-            {
-              name: 'Eduardo',
-              comment: 'Lorem lipson 3',
-              time: '1 dias'
-            }
-          ]
-        }
-      ]
+      publications:[]
     };
   }
+  componentDidMount=()=>{
+    const { publications } = this.props;
+    this.setState({publications})
+  }
   render() {
-    // const { publications, } = this.state;
+    const { publications } = this.state;
     return (
       <div className={cx('App')}>
         <header className="App-header">
@@ -52,7 +32,7 @@ class App extends Component {
         </header>
         <div className="App-body">
           <Post
-            data={this.state.publications}
+            data={Array.isArray(publications) && publications.length>0 && publications}
           />
         </div>
       </div>
@@ -60,4 +40,19 @@ class App extends Component {
   }
 }
 
-export default App;
+
+
+const mapStateToProps = (state, props) => {
+
+  return {
+     publications: state.publication.publications
+  };
+};
+// const mapDispatchToProps = {
+//   getDataApiOrderAsync,
+// };
+
+export default connect(
+    mapStateToProps,
+    null
+    )(App);
