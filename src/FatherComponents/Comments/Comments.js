@@ -27,12 +27,8 @@ class Comments extends Component {
       isloading:false
     };
   }
-  componentDidMount=()=>{
-    console.log(this.props.data);
-  }
   click=()=>{
     const { isloading } = this.state;
-    console.log('click _D');
     this.setState({
       isloading: !isloading
     });
