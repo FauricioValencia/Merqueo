@@ -1,8 +1,8 @@
-import {GET_API_USER} from '../type/';
+import { GET_PUBLICATIONS } from '../type/';
 
-export const getApiUser =(payload)=>{
+export const addPublication =(payload)=>{
     return{
-        type:GET_API_USER,  
+        type:GET_PUBLICATIONS,  
         payload
     }
 }
