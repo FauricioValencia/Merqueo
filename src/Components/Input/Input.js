@@ -5,15 +5,9 @@ import './Input.scss';
 
 class Input extends Component {
   static propTypes = {
-    _handleclick: PropTypes.func,
-    text: PropTypes.string,
-    loading: PropTypes.bool
+    placeHolder: PropTypes.string,
   }
-  static defaultProps = {
-    _handleclick: () => {},
-    text: "",
-    loading: false
-  }
+  
   render() {
     const { placeHolder } = this.props;
     return (
